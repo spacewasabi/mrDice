@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const token = 't0k3n_g0es_h3r3_mat3';
+const token = 'TOK3N_H3R3';
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setGame(`try /howto`);
@@ -32,6 +32,7 @@ client.on('message', msg => {
         case '/heal':
             msg.reply('+' + rand(10) + 'PV!');
             break;
+        };
 //Rolls a dice  
     if (msg.content.slice(0, 3) == '/r ') {
         const dice = Number(msg.content.slice(3));
@@ -45,6 +46,5 @@ client.on('message', msg => {
     if (msg.content.slice(0, 1) == '!') {
         msg.channel.send(`use /howto to get a command list or just ask my Master! Also, try using the same command but with a slash instead! `)
     }
-
-})
+});    
 client.login(token);
