@@ -1,4 +1,4 @@
-# Tamabot by Santartine
+# MrDice
 
 ## Concept
 
