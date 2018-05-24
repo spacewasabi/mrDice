@@ -9,6 +9,13 @@ then run :
 * npm install
 
 Finally, change your token by creating a Discord bot account here : https://discordapp.com/developers/docs/intro
+and saving your token in a "config.json" file like so :
+
+'''
+{
+  "token" : "your-token-here"
+}
+'''
 
 ## What is mrDice?
 
