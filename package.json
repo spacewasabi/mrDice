@@ -7,8 +7,8 @@
     "start": "nodemon dice.js"
   },
   "dependencies": {
-    "discord.js": "^11.1.0",
-    "nodemon": "^1.17.3"
+    "discord.js": "^11.4.2",
+    "nodemon": "^1.18.4"
   },
   "author": "Nelson C",
   "contributors": [
