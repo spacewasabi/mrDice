@@ -1,5 +1,5 @@
 {
-  "name": "mrDice",
+  "name": "mr_dice",
   "version": "1.1.0",
   "description": "A random Discord bot for RPG",
   "main": "dice.js",
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "discord.js": "^11.4.2",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.9"
   },
   "author": "Nelson C",
   "contributors": [
