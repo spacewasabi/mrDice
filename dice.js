@@ -49,7 +49,7 @@ client.on('message', msg => {
       const dice = Number(msg.content.slice(3));
       msg.channel.send(rand(dice));
   }
-  //Returns a "tts" message (read lowdly) and delete the command message (to make people crazy, they won't know who is talking)
+  //Returns a "tts" message (read lowdly) and delete the command message
   if (msg.content.slice(0, 5) === '/crazy ') {
     msg.delete();
     msg.channel.send(msg.content.slice(5), {tts: true});
