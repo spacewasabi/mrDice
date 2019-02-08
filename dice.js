@@ -1,8 +1,8 @@
-var fs = require('fs');
+const fs = require('fs');
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
-var token = config.token;
+const token = config.token;
 
 
 client.on('ready', () => {
@@ -10,9 +10,14 @@ client.on('ready', () => {
   client.user.setActivity(`try /howto`);
 });
 
-function rand(x) {
-    return Math.floor(Math.random() * x + 1);
+const rand = x => {
+  return Math.floor(Math.random() * x + 1);
 }
+
+const randomize = arr => {
+  return arr[rand(arr.length)]
+}
+
 
 client.on('message', msg => {
   input = msg.content.toLowerCase()
@@ -30,7 +35,7 @@ client.on('message', msg => {
     //Randomises loot!
     case '/loot':
       loot = ['weapon!','armor!','accessory!','item!','edible!','key item!','money!','lot of money!'];
-      msg.reply(loot[rand(loot.length)]);
+      msg.reply(randomize(loot));
       break;
     case '/heal':
       msg.reply('+' + rand(10) + 'PV!');
