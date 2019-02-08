@@ -58,9 +58,6 @@ client.on('message', msg => {
     msg.delete();
     msg.channel.send(msg.content.slice(5), {tts: true});
   }
-  if (msg.content.slice(0, 1) == '!') {
-    msg.channel.send(`use /howto to get a command list or just ask my Master! Also, try using the same command but with a slash instead! `)
-  }
 });
 
 client.login(token);
