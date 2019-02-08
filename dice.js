@@ -25,9 +25,8 @@ client.on('message', msg => {
   if (msg.content === '/howto') {
     msg.reply(`
       commands :
-      /r x - roll a dice from 1 to x
-      /loot - randomise a chest or a reward
-      /heal - heal a certain amount of HP
+      /r x - rolls a dice from 1 to x
+      /loot - randomizes a chest or a reward
       /crazy msg - change "msg" with a word and *surprise*
     `);
   }
@@ -36,9 +35,6 @@ client.on('message', msg => {
     case '/loot':
       loot = ['weapon!','armor!','accessory!','item!','edible!','key item!','money!','lot of money!'];
       msg.reply(randomize(loot));
-      break;
-    case '/heal':
-      msg.reply('+' + rand(10) + 'PV!');
       break;
     case '/test':
       TEST = fs.readFile('test.txt', 'utf8', function(err, data) {
